@@ -1,0 +1,24 @@
+layout {
+    pane size=1 borderless=true {
+      plugin location="file:/home/mhiri/.config/zellij/plugins/zellij-datetime.wasm"{
+        timezone1 "UTC/+1"
+        default_timezone "UTC/+1"
+        background_color "#414868"
+        foreground_color "#c0caf5"
+        pane_color "#1a1b26"
+        enable_right_click true
+        arrow_separator1 ""
+        arrow_separator2 ""
+        arrow_separator3 ""
+        padding_adjust 0
+        text_align "right"
+      }
+    }
+    pane size=1 borderless=true {
+        plugin location="zellij:tab-bar"
+    }
+    pane
+    pane size=2 borderless=true {
+        plugin location="zellij:status-bar"
+    }
+}
