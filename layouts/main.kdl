@@ -1,0 +1,40 @@
+
+layout {
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+        children
+    }
+    tab name="Tab 1" split_direction="horizontal" cwd="~" {
+        pane
+        pane
+    }
+    tab name="Tab 2" cwd="~" {
+        pane
+    }
+    tab name="Tab 3" cwd="~" {
+        pane
+    }
+    tab name="Tab 4" cwd="~" {
+        pane
+    }
+    tab name="Tab 5" cwd="~" {
+        pane
+    }
+    tab name="Tab 6" cwd="~" {
+        pane
+    }
+    tab name="Files" split_direction="vertical" cwd="~/.config" {
+        pane command="ranger" name="ranger"
+        pane
+    }
+    tab name="Dashboard" split_direction="vertical" cwd="~" {
+        pane command="btop" name="Monitor"
+        pane command="nvtop" name="GPU"
+    }
+    tab name="spotify" split_direction="vertical" cwd="~" {
+        pane command="spt" size="70%"
+        pane command="cava" size="30%"
+    }
+}

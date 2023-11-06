@@ -1,8 +1,11 @@
 layout {
-    pane size=1 borderless=true {
-        plugin location="zellij:compact-bar"
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+        children
     }
-    pane split_direction="vertical"{
+    tab name="Spotify" split_direction="vertical" cwd="~" {
         pane command="spt" size="70%"
         pane command="cava" size="30%"
     }
