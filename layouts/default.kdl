@@ -1,4 +1,5 @@
 layout {
+  /*
     pane size=1 borderless=true {
       plugin location="file:/home/mhiri/.config/zellij/plugins/zellij-datetime.wasm"{
         timezone1 "UTC/+1"
@@ -14,6 +15,7 @@ layout {
         text_align "right"
       }
     }
+  */
     pane size=1 borderless=true {
         plugin location="zellij:tab-bar"
     }
